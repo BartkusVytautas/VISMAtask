@@ -33,7 +33,7 @@ public class Main {
 
                 String[] productString = line.split(",");   //Splitting the row by "," and converting it to the Product object
                 Product product = new Product(productString[0], productString[1], Integer.parseInt(productString[2]),
-                        new SimpleDateFormat("yyy-MM-dd").parse(productString[3]));
+                        new SimpleDateFormat("yyyy-MM-dd").parse(productString[3]));
 
                 if(!productListFromCSV.isEmpty()){   //Adding quantities for the same products
                     for(Product p: productListFromCSV){
